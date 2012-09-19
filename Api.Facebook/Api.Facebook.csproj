@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A8A2FDF-65E3-4447-8A7F-854B744F196A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Api.Facebook</RootNamespace>
+    <AssemblyName>Api.Facebook</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Achievement.Achieved.cs" />
+    <Compile Include="Achievement.cs" />
+    <Compile Include="Event.Privacy.cs" />
+    <Compile Include="FriendList.Type.cs" />
+    <Compile Include="Group.Version.cs" />
+    <Compile Include="GroupPrivacy.cs" />
+    <Compile Include="Page.Cover.cs" />
+    <Compile Include="Photo.NameTag.cs" />
+    <Compile Include="Photo.NameTags.cs" />
+    <Compile Include="Photo.Tag.cs" />
+    <Compile Include="Photo.Tags.cs" />
+    <Compile Include="Post.Action.cs" />
+    <Compile Include="Album.cs" />
+    <Compile Include="Album.Type.cs" />
+    <Compile Include="Allow.cs" />
+    <Compile Include="Application.cs" />
+    <Compile Include="Checkin.Application.cs" />
+    <Compile Include="Checkin.cs" />
+    <Compile Include="Comment.cs" />
+    <Compile Include="Comments.cs" />
+    <Compile Include="Post.MessageTag.cs" />
+    <Compile Include="Post.MessageTags.cs" />
+    <Compile Include="SecureBrowsing.cs" />
+    <Compile Include="User.Cover.cs" />
+    <Compile Include="User.Currency.cs" />
+    <Compile Include="Privacy.cs" />
+    <Compile Include="Post.Privacy.Deny.cs" />
+    <Compile Include="Post.Privacy.Description.cs" />
+    <Compile Include="User.Device.cs" />
+    <Compile Include="User.Education.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="Post.Privacy.Friend.cs" />
+    <Compile Include="FriendList.cs" />
+    <Compile Include="Domain.cs" />
+    <Compile Include="Offer.From.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="User.Device.Hardware.cs" />
+    <Compile Include="Photo.Image.cs" />
+    <Compile Include="Insight.cs" />
+    <Compile Include="User.Installed.cs" />
+    <Compile Include="Likes.cs" />
+    <Compile Include="Link.cs" />
+    <Compile Include="User.Locale.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="Post.Privacy.Network.cs" />
+    <Compile Include="Note.cs" />
+    <Compile Include="QuestionOption.Object.cs" />
+    <Compile Include="Offer.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="User.Device.Os.cs" />
+    <Compile Include="Page.cs" />
+    <Compile Include="Thread.Participant.cs" />
+    <Compile Include="Photo.cs" />
+    <Compile Include="Place.cs" />
+    <Compile Include="Post.cs" />
+    <Compile Include="Post.Privacy.cs" />
+    <Compile Include="Post.Property.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Question.cs" />
+    <Compile Include="QuestionOption.cs" />
+    <Compile Include="Application.Response.Type.cs" />
+    <Compile Include="Application.Restriction.cs" />
+    <Compile Include="Review.cs" />
+    <Compile Include="User.Education.School.cs" />
+    <Compile Include="User.SecuritySetting.cs" />
+    <Compile Include="Order.Status.cs" />
+    <Compile Include="StatusMessage.cs" />
+    <Compile Include="Post.Structure.cs" />
+    <Compile Include="Thread.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Insight.Value.cs" />
+    <Compile Include="Post.Privacy.Value.cs" />
+    <Compile Include="Event.Venue.cs" />
+    <Compile Include="UserData.cs" />
+    <Compile Include="Video.cs" />
+    <Compile Include="User.VideoUploadLimit.cs" />
+    <Compile Include="User.Work.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
