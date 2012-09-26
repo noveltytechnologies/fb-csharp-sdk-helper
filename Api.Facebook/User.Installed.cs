@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace Api.Facebook
 {
@@ -16,17 +12,17 @@ namespace Api.Facebook
    public class Installed
     {
        /// <summary>
-       /// type is contain string
+       /// type contains string
        /// </summary>
        [DataMember(Name = "type")]
         public string Type { get; set; }
        /// <summary>
-       /// id is contain string
+       /// id contains string
        /// </summary>
        [DataMember(Name = "id")]
         public string Id { get; set; }
        /// <summary>
-       /// text is contain string
+       /// text contains string
        /// </summary>
        [DataMember(Name = "text")]
         public string Text { get; set; }

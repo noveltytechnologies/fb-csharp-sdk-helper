@@ -48,10 +48,17 @@
     <Compile Include="Achievement.Achieved.cs" />
     <Compile Include="Achievement.cs" />
     <Compile Include="Event.Privacy.cs" />
+    <Compile Include="Feed.cs" />
     <Compile Include="FriendList.Type.cs" />
     <Compile Include="Group.Version.cs" />
     <Compile Include="GroupPrivacy.cs" />
+    <Compile Include="Inbox.cs" />
+    <Compile Include="Inbox.Message.cs" />
+    <Compile Include="Inbox.Summary.cs" />
+    <Compile Include="Inbox.Thread.cs" />
+    <Compile Include="Message.Tags.cs" />
     <Compile Include="Page.Cover.cs" />
+    <Compile Include="Paging.cs" />
     <Compile Include="Photo.NameTag.cs" />
     <Compile Include="Photo.NameTags.cs" />
     <Compile Include="Photo.Tag.cs" />
@@ -59,43 +66,38 @@
     <Compile Include="Post.Action.cs" />
     <Compile Include="Album.cs" />
     <Compile Include="Album.Type.cs" />
-    <Compile Include="Allow.cs" />
     <Compile Include="Application.cs" />
-    <Compile Include="Checkin.Application.cs" />
+    <Compile Include="Application.Checkin.cs" />
     <Compile Include="Checkin.cs" />
     <Compile Include="Comment.cs" />
     <Compile Include="Comments.cs" />
-    <Compile Include="Post.MessageTag.cs" />
-    <Compile Include="Post.MessageTags.cs" />
+    <Compile Include="Shares.cs" />
+    <Compile Include="Story.Tag.cs" />
+    <Compile Include="Story.Tags.cs" />
     <Compile Include="SecureBrowsing.cs" />
+    <Compile Include="Inbox.Thread.Items.cs" />
+    <Compile Include="Thread.Participant.Items.cs" />
     <Compile Include="User.Cover.cs" />
     <Compile Include="User.Currency.cs" />
-    <Compile Include="Privacy.cs" />
-    <Compile Include="Post.Privacy.Deny.cs" />
-    <Compile Include="Post.Privacy.Description.cs" />
+    <Compile Include="Application.Privacy.cs" />
     <Compile Include="User.Device.cs" />
     <Compile Include="User.Education.cs" />
     <Compile Include="Event.cs" />
-    <Compile Include="Post.Privacy.Friend.cs" />
     <Compile Include="FriendList.cs" />
     <Compile Include="Domain.cs" />
     <Compile Include="Offer.From.cs" />
     <Compile Include="Group.cs" />
-    <Compile Include="User.Device.Hardware.cs" />
     <Compile Include="Photo.Image.cs" />
     <Compile Include="Insight.cs" />
     <Compile Include="User.Installed.cs" />
     <Compile Include="Likes.cs" />
     <Compile Include="Link.cs" />
-    <Compile Include="User.Locale.cs" />
     <Compile Include="Location.cs" />
-    <Compile Include="Message.cs" />
-    <Compile Include="Post.Privacy.Network.cs" />
+    <Compile Include="Thread.Message.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="QuestionOption.Object.cs" />
     <Compile Include="Offer.cs" />
     <Compile Include="Order.cs" />
-    <Compile Include="User.Device.Os.cs" />
     <Compile Include="Page.cs" />
     <Compile Include="Thread.Participant.cs" />
     <Compile Include="Photo.cs" />
@@ -109,20 +111,23 @@
     <Compile Include="Application.Response.Type.cs" />
     <Compile Include="Application.Restriction.cs" />
     <Compile Include="Review.cs" />
-    <Compile Include="User.Education.School.cs" />
     <Compile Include="User.SecuritySetting.cs" />
     <Compile Include="Order.Status.cs" />
     <Compile Include="StatusMessage.cs" />
-    <Compile Include="Post.Structure.cs" />
     <Compile Include="Thread.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Insight.Value.cs" />
-    <Compile Include="Post.Privacy.Value.cs" />
     <Compile Include="Event.Venue.cs" />
-    <Compile Include="UserData.cs" />
+    <Compile Include="User.Picture.cs" />
     <Compile Include="Video.cs" />
     <Compile Include="User.VideoUploadLimit.cs" />
     <Compile Include="User.Work.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="To.Items.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="User.Picture.Items.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

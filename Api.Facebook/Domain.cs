@@ -2,20 +2,21 @@
 
 namespace Api.Facebook
 {
-    /// <summary>
-    /// Form class is contain the Id and Name 
-    /// </summary>
-    public class Domain
-    {
-        /// <summary>
-        /// Id is contain the string
-        /// </summary>
-        [DataMember(Name = "id")]
-        public string Id { get; set; }
-        /// <summary>
-        /// Name is contain the string
-        /// </summary>
-        [DataMember(Name = "name")]
-        public string Name { get; set; }
-    }
+	/// <summary>
+	/// Contains the Id and Name. One of the base object. 
+	/// </summary>
+	[DataContract]
+	public class Domain
+	{
+		/// <summary>
+		/// Id 
+		/// </summary>
+		[DataMember(Name = "id")]
+		public string Id { get; set; }
+		/// <summary>
+		/// Name 
+		/// </summary>
+		[DataMember(Name = "name")]
+		public string Name { get; set; }
+	}
 }

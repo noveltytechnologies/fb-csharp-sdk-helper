@@ -1,48 +1,49 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml.Serialization;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
+using System.Collections.ObjectModel;
+
 namespace Api.Facebook
 {
 	/// <summary>
-	/// A user profile as represented in the Graph API.
+	/// A user profile .
+	/// <example>
+	///  me?fields=id,name,first_name,middle_name,last_name,gender,locale,languages,link,username,third_party_id,installed,timezone,updated_time,verified,bio,birthday,cover,currency,devices,education,email,hometown,interested_in,location,political,favorite_athletes,favorite_teams,picture,quotes,relationship_status,religion,security_settings,video_upload_limits,website,work
+	/// </example>
 	/// </summary>
+	[DataContract]
 	public class User
 	{
 		/// <summary>
-		/// id is contain string
+		/// id contains string
 		/// The user's Facebook ID
 		/// </summary>
 		[DataMember(Name = "id")]
 		public string Id { get; set; }
 		/// <summary>
-		/// name is contain string
+		/// name contains string
 		/// The user's full name
 		/// </summary>
 		[DataMember(Name = "name")]
 		public string Name { get; set; }
 		/// <summary>
-		/// first_name is contain string
+		/// first_name contains string
 		/// The user's first name
 		/// </summary>
 		[DataMember(Name = "first_name")]
 		public string FirstName { get; set; }
 		/// <summary>
-		/// middle_name is contain string
+		/// middle_name contains string
 		/// The user's middle name
 		/// </summary>
 		[DataMember(Name = "middle_name")]
 		public string MiddleName { get; set; }
 		/// <summary>
-		/// last_name is contain string
+		/// last_name contains string
 		/// The user's last name
 		/// </summary>
 		[DataMember(Name = "last_name")]
 		public string LastName { get; set; }
 		/// <summary>
-		/// gender is contain string
+		/// gender contains string
 		/// The user's gender: female or male
 		/// </summary>
 		[DataMember(Name = "gender")]
@@ -52,7 +53,7 @@ namespace Api.Facebook
 		/// The user's locale
 		/// </summary>
 		[DataMember(Name = "locale")]
-		public Locale Locale { get; set; }
+		public string Locale { get; set; }
 		/// <summary>
 		/// array of objects containing language id and name
 		/// The user's languages
@@ -66,13 +67,13 @@ namespace Api.Facebook
 		[DataMember(Name = "link")]
 		public string Link { get; set; }
 		/// <summary>
-		/// username is contain string
+		/// username contains string
 		/// The user's Facebook username
 		/// </summary>
 		[DataMember(Name = "username")]
 		public string UserName { get; set; }
 		/// <summary>
-		/// third_party_id is contain string
+		/// third_party_id contains string
 		/// An anonymous, but unique identifier for the user; only returned if specifically requested via the fields URL parameter
 		/// </summary>
 		[DataMember(Name = "third_party_id")]
@@ -86,11 +87,11 @@ namespace Api.Facebook
 		[DataMember(Name = "installed")]
 		public bool Installed { get; set; }
 		/// <summary>
-		/// timezone is contain number
+		/// timezone contains number
 		/// The user's timezone offset from UTC
 		/// </summary>
 		[DataMember(Name = "timezone")]
-		public float Timezone { get; set; }
+		public string Timezone { get; set; }
 		/// <summary>
 		/// string containing an ISO-8601 datetime
 		/// The last time the user's profile was updated; changes to the languages, link, timezone, 
@@ -99,23 +100,28 @@ namespace Api.Facebook
 		[DataMember(Name = "updated_time")]
 		public string UpdatedTime { get; set; }
 		/// <summary>
-		/// verified is contain boolean
+		/// verified contains boolean
 		/// The user's account verification status, either true or false (see below)
 		/// </summary>
 		[DataMember(Name = "verified")]
 		public bool Verified { get; set; }
 		/// <summary>
-		/// bio is contain string
+		/// bio contains string
 		/// The user's biography
 		/// </summary>
 		[DataMember(Name = "bio")]
 		public string Bio { get; set; }
 		/// <summary>
+		/// string
+		/// </summary>
+		[DataMember(Name = "about")]
+		public string About { get; set; }
+		/// <summary>
 		/// Date string in MM/DD/YYYY format
 		/// The user's birthday
 		/// </summary>
 		[DataMember(Name = "birthday")]
-		public string Birthday { get; set; }
+		public string BirthDay { get; set; }
 		/// <summary>
 		/// array of fields id, source, and offset_y
 		/// The user's cover photo (must be explicitly requested using fields=cover parameter)
@@ -166,7 +172,7 @@ namespace Api.Facebook
 		[DataMember(Name = "location")]
 		public Domain Location { get; set; }
 		/// <summary>
-		/// political is contain string
+		/// political contains string
 		/// The user's political view
 		/// </summary>
 		[DataMember(Name = "political")]
@@ -189,22 +195,22 @@ namespace Api.Facebook
 		/// The URL of the user's profile pic (only returned if you explicitly specify a 'fields=picture' param)
 		/// </summary>
 		[DataMember(Name = "picture")]
-		public UserPicture Picture { get; set; }
+		public PictureItems Picture { get; set; }
 		/// <summary>
-		/// quotes is contain string
+		/// quotes contain string
 		/// The user's favorite quotes
 		/// </summary>
 		[DataMember(Name = "quotes")]
 		public string Quotes { get; set; }
 		///<summary>
-		///this is contain string
+		/// string
 		/// The user's relationship status: Single, In a relationship, Engaged, Married,
 		/// It's complicated, In an open relationship, Widowed, Separated, Divorced, In a civil union, In a domestic partnership
 		/// </summary>
 		[DataMember(Name = "relationship_status")]
 		public string RelationalshipStatus { get; set; }
 		/// <summary>
-		/// religion is contain string
+		/// religion contains string
 		/// The user's religion
 		/// </summary>
 		[DataMember(Name = "religion")]
@@ -238,6 +244,6 @@ namespace Api.Facebook
 		///A list of the user's work history
 		/// </summary>
 		[DataMember(Name = "work")]
-		public UserWork[] Work { get; set; }
+		public Work[] Work { get; set; }
 	}
 }

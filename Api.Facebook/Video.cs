@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml.Serialization;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace Api.Facebook
 {
     /// <summary>
+    /// <example>
+    /// me/videos?fields=id,from,tags,name,description,picture,embed_html,icon,source,created_time,updated_time,comments
+    /// </example>
     /// An individual Video in the Graph API.
     /// </summary>
     public class Video

@@ -3,17 +3,18 @@
 namespace Api.Facebook
 {
     /// <summary>
-    /// Comment class contain the Like,Id,Message,CreatedTime property
+    /// Array of comment. <seealso cref="Comment"/>
     /// </summary>
-    public class Comments
+	[DataContract()]
+	public class Comments
     {
         /// <summary>
-        /// count contain a string
+        /// count
         /// </summary>
         [DataMember(Name = "count")]
         public long Count { get; set; }
         /// <summary>
-        /// object contain the array of comment
+        /// Array of comment
         /// </summary>
         [DataMember(Name = "data")]
         public Comment[] Items { get; set; }

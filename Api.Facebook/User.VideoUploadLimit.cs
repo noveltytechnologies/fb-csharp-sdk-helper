@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace Api.Facebook
 {
@@ -10,7 +6,8 @@ namespace Api.Facebook
     /// object containing length and size of video
     ///the size of the video file and the length of the video that a user can upload; only returned if specifically requested via the
     /// </summary>
-    public class VideoUploadLimit
+    [DataContract]
+	public class VideoUploadLimit
     {
         /// <summary>
         ///long
