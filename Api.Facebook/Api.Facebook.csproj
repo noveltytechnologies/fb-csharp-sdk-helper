@@ -51,7 +51,7 @@
     <Compile Include="Feed.cs" />
     <Compile Include="FriendList.Type.cs" />
     <Compile Include="Group.Version.cs" />
-    <Compile Include="GroupPrivacy.cs" />
+    <Compile Include="Group.Privacy.cs" />
     <Compile Include="Inbox.cs" />
     <Compile Include="Inbox.Message.cs" />
     <Compile Include="Inbox.Summary.cs" />
@@ -70,8 +70,8 @@
     <Compile Include="Application.Checkin.cs" />
     <Compile Include="Checkin.cs" />
     <Compile Include="Comment.cs" />
-    <Compile Include="Comments.cs" />
-    <Compile Include="Shares.cs" />
+    <Compile Include="Comment.Items.cs" />
+    <Compile Include="Share.Items.cs" />
     <Compile Include="Story.Tag.cs" />
     <Compile Include="Story.Tags.cs" />
     <Compile Include="SecureBrowsing.cs" />
@@ -90,7 +90,7 @@
     <Compile Include="Photo.Image.cs" />
     <Compile Include="Insight.cs" />
     <Compile Include="User.Installed.cs" />
-    <Compile Include="Likes.cs" />
+    <Compile Include="Like.Items.cs" />
     <Compile Include="Link.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="Thread.Message.cs" />
@@ -120,7 +120,7 @@
     <Compile Include="Event.Venue.cs" />
     <Compile Include="User.Picture.cs" />
     <Compile Include="Video.cs" />
-    <Compile Include="User.VideoUploadLimit.cs" />
+    <Compile Include="User.Video.UploadLimit.cs" />
     <Compile Include="User.Work.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -128,6 +128,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="User.Picture.Items.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="license.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

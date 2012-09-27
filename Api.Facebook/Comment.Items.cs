@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="Application.Privacy.cs" company="Novelty Technologies">
+// <copyright file="Comment.Items.cs" company="Novelty Technologies">
 // Copyright (c) 2011, Novelty Technologies.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,17 +20,21 @@ using System.Runtime.Serialization;
 
 namespace Api.Facebook
 {
-	/// <summary>
-	/// string which is one of: SELF, EVERYONE, ALL_FRIENDS or NONE
-	/// </summary>
-	[DataContract]
-	public class Privacy
-	{
-		public static readonly string SELF = "SELF", EVERYONE = "EVERYONE", ALL_FRIENDS = "ALL_FRIENDS", NONE = "NONE";
-		/// <summary>
-		///type contain string
-		/// </summary>
-		[DataMember(Name = "type")]
-		public string Type { get; set; }
-	}
+    /// <summary>
+    /// Array of comment. <seealso cref="Comment"/>
+    /// </summary>
+	[DataContract()]
+	public class CommentItems
+    {
+        /// <summary>
+        /// count
+        /// </summary>
+        [DataMember(Name = "count")]
+        public long Count { get; set; }
+        /// <summary>
+        /// Array of comment
+        /// </summary>
+        [DataMember(Name = "data")]
+        public Comment[] Items { get; set; }
+    }
 }

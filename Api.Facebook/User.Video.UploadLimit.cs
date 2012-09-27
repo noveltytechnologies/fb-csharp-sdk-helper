@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="Application.Privacy.cs" company="Novelty Technologies">
+// <copyright file="User.Video.UploadLimit.cs" company="Novelty Technologies">
 // Copyright (c) 2011, Novelty Technologies.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,17 +20,22 @@ using System.Runtime.Serialization;
 
 namespace Api.Facebook
 {
-	/// <summary>
-	/// string which is one of: SELF, EVERYONE, ALL_FRIENDS or NONE
-	/// </summary>
-	[DataContract]
-	public class Privacy
-	{
-		public static readonly string SELF = "SELF", EVERYONE = "EVERYONE", ALL_FRIENDS = "ALL_FRIENDS", NONE = "NONE";
-		/// <summary>
-		///type contain string
-		/// </summary>
-		[DataMember(Name = "type")]
-		public string Type { get; set; }
-	}
+    /// <summary>
+    /// object containing length and size of video
+    ///the size of the video file and the length of the video that a user can upload; only returned if specifically requested via the
+    /// </summary>
+    [DataContract]
+	public class VideoUploadLimit
+    {
+        /// <summary>
+        ///long
+        /// </summary>
+        [DataMember(Name = "length")]
+        public long Length { get; set; }
+        /// <summary>
+        ///long
+        /// </summary>
+        [DataMember(Name = "size")]
+        public long Size { get; set; }
+    }
 }

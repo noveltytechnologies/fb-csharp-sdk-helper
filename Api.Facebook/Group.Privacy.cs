@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="Application.Privacy.cs" company="Novelty Technologies">
+// <copyright file="Group.Privacy.cs" company="Novelty Technologies">
 // Copyright (c) 2011, Novelty Technologies.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,16 +21,17 @@ using System.Runtime.Serialization;
 namespace Api.Facebook
 {
 	/// <summary>
-	/// string which is one of: SELF, EVERYONE, ALL_FRIENDS or NONE
+	/// Group privacy setting
+	/// <seealso cref="Group"/>
 	/// </summary>
 	[DataContract]
-	public class Privacy
+	public class GroupPrivacy
 	{
-		public static readonly string SELF = "SELF", EVERYONE = "EVERYONE", ALL_FRIENDS = "ALL_FRIENDS", NONE = "NONE";
+		public static readonly string OPEN = "OPEN", CLOSED = "CLOSED", SECRET = "SECRET";
 		/// <summary>
-		///type contain string
+		///type - string
 		/// </summary>
-		[DataMember(Name = "type")]
+		[DataMember(Name = "privacy")]
 		public string Type { get; set; }
 	}
 }
