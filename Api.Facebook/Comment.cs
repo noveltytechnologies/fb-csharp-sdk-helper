@@ -20,6 +20,7 @@ using System.Runtime.Serialization;
 
 namespace Api.Facebook
 {
+	[DataContract]
 	public class Comment
 	{
 		/// <summary>

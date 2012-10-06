@@ -26,6 +26,7 @@ namespace Api.Facebook
 	/// Api Query: me/notes?fields=id,from,subject,message,comments,created_time,updated_time,icon
 	/// </example>
 	/// </summary>
+	[DataContract]
 	public class Note
 	{
 		/// <summary>

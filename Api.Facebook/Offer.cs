@@ -24,6 +24,7 @@ namespace Api.Facebook
 	/// An Offer represents an offer that is published by a page. 
 	/// Only Page objects have offers connections.
 	/// </summary>
+	[DataContract]
 	public class Offer
 	{
 		/// <summary>

@@ -23,7 +23,8 @@ namespace Api.Facebook
     /// <summary>
     /// object contains one or more of the following fields: id, street, city, state, zip, country, latitude, and longitude fields
     /// </summary>
-    public class Venue
+	[DataContract]
+	public class Venue
     {
         /// <summary>
         /// string

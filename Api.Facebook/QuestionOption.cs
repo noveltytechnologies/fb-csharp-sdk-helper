@@ -23,6 +23,7 @@ namespace Api.Facebook
 	/// <summary>
 	/// An option allowed as an answer to a Question, .
 	/// </summary>
+	[DataContract]
 	public class QuestionOption
 	{
 		/// <summary>

@@ -23,6 +23,7 @@ namespace Api.Facebook
 	/// <summary>
 	/// One or more of the following fields: type, location, age, and age_distr
 	/// </summary>
+	[DataContract]
 	public class ApplicationRestriction
 	{
 		/// <summary>

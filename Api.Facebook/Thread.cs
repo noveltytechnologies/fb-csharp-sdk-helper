@@ -24,6 +24,7 @@ namespace Api.Facebook
 	/// A message thread in the new Facebook messaging system . The User object has a threads connections.
 	/// <example>Api Query: me/threads</example>
 	/// </summary>
+	[DataContract]
 	public class Thread
 	{
 		/// <summary>

@@ -23,6 +23,7 @@ namespace Api.Facebook
 	/// <summary>
 	/// which is one of: code or token <seealso cref="Application"/>
 	/// </summary>
+	[DataContract]
 	public class ResponseType
 	{
 		public static readonly string Code = "code", Token = "token";

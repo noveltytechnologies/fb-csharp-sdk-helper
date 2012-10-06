@@ -24,6 +24,6 @@ namespace Api.Facebook
 	public class ParticipantItems
 	{
 		[DataMember(Name = "data")]
-		public Participant[] Items {get;set;}
+		public Participant[] Items { get; set; }
 	}
 }

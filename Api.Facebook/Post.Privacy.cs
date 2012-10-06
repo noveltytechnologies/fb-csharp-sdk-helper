@@ -20,15 +20,15 @@ using System.Runtime.Serialization;
 
 namespace Api.Facebook
 {
-    /// <summary>
-    /// object containing the value field and optional friends, networks, allow, deny and description fields.
-    /// </summary>
-    [DataContract]
+	/// <summary>
+	/// object containing the value field and optional friends, networks, allow, deny and description fields.
+	/// </summary>
+	[DataContract]
 	public class PostPrivacy
-    {
-        /// <summary>
-        /// The description field may contain a comma-separated lists of valid country, city and language if a Page's post targeting by location/language is specified.
-        /// </summary>
+	{
+		/// <summary>
+		/// The description field may contain a comma-separated lists of valid country, city and language if a Page's post targeting by location/language is specified.
+		/// </summary>
 		[DataMember(Name = "description")]
 		public string Description { get; set; }
 		/// <summary>
@@ -60,5 +60,5 @@ namespace Api.Facebook
 		/// </summary>
 		[DataMember(Name = "deny")]
 		public string Deny { get; set; }
-    }
+	}
 }

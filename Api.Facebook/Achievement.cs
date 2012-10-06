@@ -25,7 +25,8 @@ namespace Api.Facebook
     /// An app can always access achievement(instance) associated with their app with an app or user access_token associated with their app. 
     /// Require user_games_activity, friends_games_activity permissions.
     /// </summary>
-    public class Achievement
+	[DataContract]
+	public class Achievement
     {
         /// <summary>
         /// string

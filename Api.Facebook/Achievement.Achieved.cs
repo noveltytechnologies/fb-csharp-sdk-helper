@@ -23,6 +23,7 @@ namespace Api.Facebook
 	/// <summary>
 	/// contains  id,url,type,title
 	/// </summary>
+	[DataContract]
 	public class Achieved
 	{
 		/// <summary>

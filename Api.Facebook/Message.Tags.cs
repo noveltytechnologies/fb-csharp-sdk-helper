@@ -31,13 +31,13 @@ namespace Api.Facebook
 		/// Tags or specific tag arrays are returned.
 		/// </summary>
 		[DataMember]
-		public StoryTag[] Items {get;set;}
+		public StoryTag[] Items { get; set; }
 		/// <summary>
 		/// Dynamic property
 		/// </summary>
 		[DataMember(Name = "3")]
 		public StoryTag[] _3 { get; set; }
-		
+
 		//Further can be exdend as below
 		/*
 		[DataMember(Name = "36")]

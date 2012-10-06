@@ -23,6 +23,7 @@ namespace Api.Facebook
     /// <summary>
     /// Contains name and id, canvas_name, and namespace of the application
     /// </summary>
+	[DataContract]
 	public class ApplicationCheckin
     {
         /// <summary>
