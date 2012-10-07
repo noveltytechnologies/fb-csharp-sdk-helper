@@ -39,7 +39,7 @@ namespace Api.Facebook
 		/// <summary>
 		/// source - url string
 		/// </summary>
-		[DataMember(Name = "souce")]
+		[DataMember(Name = "source")]
 		public string Source { get; set; }
 	}
 }
